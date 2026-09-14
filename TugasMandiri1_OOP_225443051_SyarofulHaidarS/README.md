@@ -1,6 +1,6 @@
 # Sistem Manajemen Perpustakaan Digital
 
-**Mahasiswa:** Syaroful Haidar S  
+**Mahasiswa:** Syaroful Haidar Sudaryono  
 **NIM:** 225443051
 
 Program Kotlin berbasis OOP untuk mengelola buku, jurnal, DVD, anggota, peminjaman, pengembalian, dan denda keterlambatan.

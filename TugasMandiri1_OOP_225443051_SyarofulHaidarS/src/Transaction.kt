@@ -1,23 +1,35 @@
 import java.time.LocalDate
 
-/** A borrowing transaction connecting a member and an item. */
+/** Transaksi peminjaman yang menghubungkan anggota dan item. */
 class Transaction(
-    /** Unique transaction identifier. */ val id: String,
-    /** Borrowed item. */ val item: Item,
-    /** Member who borrows the item. */ val member: Member,
-    /** Date on which the item was borrowed. */ val borrowDate: String = LocalDate.now().toString(),
-    /** Current transaction state. */ var status: TransactionStatus = TransactionStatus.Borrowed
+    /** Pengidentifikasi transaksi yang unik. */ val id: String,
+    /** Item yang dipinjam. */ val item: Item,
+    /** Anggota yang meminjam item. */ val member: Member,
+    /** Tanggal saat item dipinjam. */ val borrowDate: String = LocalDate.now().toString(),
+    /** Status transaksi saat ini. */ var status: TransactionStatus = TransactionStatus.Borrowed
 ) {
-    /** Returns the item and records its return status. */
+    /** Mengembalikan item dan mencatat status pengembaliannya. */
     fun returnItem(daysLate: Int): Double {
-        if (status.isFinal()) { println("Transaksi $id sudah selesai dan tidak dapat diubah."); return 0.0 }
+        if (status.isFinal()) {
+            println("Transaksi $id sudah selesai dan tidak dapat diubah.")
+            return 0.0
+        }
         val lateDays = daysLate.coerceAtLeast(0)
         val fine = item.returnItem(lateDays)
         status = if (lateDays > 0) TransactionStatus.Overdue(lateDays) else TransactionStatus.Returned
         return fine
     }
-    /** Cancels this transaction and makes the item available again. */
-    fun cancel() { if (status.isFinal()) println("Transaksi $id sudah selesai dan tidak dapat dibatalkan.") else { status = TransactionStatus.Cancelled; item.returnItem() } }
-    /** Displays transaction details. */
+
+    /** Membatalkan transaksi ini dan membuat item tersedia kembali. */
+    fun cancel() {
+        if (status.isFinal()) {
+            println("Transaksi $id sudah selesai dan tidak dapat dibatalkan.")
+        } else {
+            status = TransactionStatus.Cancelled
+            item.returnItem()
+        }
+    }
+
+    /** Menampilkan detail transaksi. */
     fun displayTransaction() = println("$id | ${item.title} (${item.id}) | ${member.name} | $borrowDate | ${status.display()}")
 }

@@ -1,4 +1,4 @@
-/** Demonstrates the Digital Library Management System. */
+/** Menjalankan contoh penggunaan Sistem Manajemen Perpustakaan Digital. */
 fun main() {
     val library = Library("Perpustakaan Kampus")
     val book1 = Book("B001", "Pemrograman Kotlin", 2023, "Budi Santoso", 350, "Programming")

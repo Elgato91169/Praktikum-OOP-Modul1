@@ -1,9 +1,30 @@
-/** Represents every possible lifecycle state of a transaction. */
+/** Merepresentasikan semua kemungkinan status dalam siklus transaksi. */
 sealed class TransactionStatus {
-    /** Produces a human-readable status label. */ abstract fun display(): String
-    /** True when this state can no longer change. */ fun isFinal(): Boolean = this is Returned || this is Cancelled
-    /** Item is currently borrowed. */ object Borrowed : TransactionStatus() { override fun display() = "Dipinjam" }
-    /** Item has been returned on time. */ object Returned : TransactionStatus() { override fun display() = "Dikembalikan" }
-    /** Item was returned late. */ data class Overdue(/** Number of late days. */ val daysLate: Int) : TransactionStatus() { override fun display() = "Terlambat ($daysLate hari)" }
-    /** Transaction was cancelled. */ object Cancelled : TransactionStatus() { override fun display() = "Dibatalkan" }
+    /** Menghasilkan label status yang mudah dibaca. */
+    abstract fun display(): String
+
+    /** Bernilai benar jika status ini tidak dapat diubah lagi. */
+    fun isFinal(): Boolean = this is Returned || this is Cancelled
+
+    /** Item sedang dipinjam. */
+    object Borrowed : TransactionStatus() {
+        override fun display() = "Dipinjam"
+    }
+
+    /** Item telah dikembalikan tepat waktu. */
+    object Returned : TransactionStatus() {
+        override fun display() = "Dikembalikan"
+    }
+
+    /** Item dikembalikan terlambat. */
+    data class Overdue(
+        /** Jumlah hari keterlambatan. */ val daysLate: Int
+    ) : TransactionStatus() {
+        override fun display() = "Terlambat ($daysLate hari)"
+    }
+
+    /** Transaksi dibatalkan. */
+    object Cancelled : TransactionStatus() {
+        override fun display() = "Dibatalkan"
+    }
 }

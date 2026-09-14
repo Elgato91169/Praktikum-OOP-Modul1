@@ -1,23 +1,29 @@
-/** A registered library member. */
+/** Anggota perpustakaan yang sudah terdaftar. */
 class Member(
-    /** Unique member identifier. */ val id: String,
-    /** Member name. */ val name: String,
+    /** Pengidentifikasi anggota yang unik. */ val id: String,
+    /** Nama anggota. */ val name: String,
     private val email: String,
     private val phone: String
 ) {
     private val transactions = mutableListOf<Transaction>()
 
-    /** Total transactions made by this member. */ val transactionCount: Int get() = transactions.size
-    /** Total fines from overdue transactions. */
+    /** Jumlah seluruh transaksi yang dilakukan anggota ini. */
+    val transactionCount: Int get() = transactions.size
+
+    /** Total denda dari transaksi yang terlambat. */
     val totalFines: Double get() = transactions.sumOf { transaction ->
         (transaction.status as? TransactionStatus.Overdue)?.let { it.daysLate * transaction.item.calculateFinePerDay() } ?: 0.0
     }
-    /** Number of items currently borrowed. */ val activeBorrows: Int get() = transactions.count { it.status is TransactionStatus.Borrowed }
+    /** Jumlah item yang sedang dipinjam. */
+    val activeBorrows: Int get() = transactions.count { it.status is TransactionStatus.Borrowed }
 
-    /** Returns the member email address. */ fun getEmail(): String = email
-    /** Returns the member phone number. */ fun getPhone(): String = phone
+    /** Mengembalikan alamat email anggota. */
+    fun getEmail(): String = email
 
-    /** Borrows an available item if the member has fewer than three active loans. */
+    /** Mengembalikan nomor telepon anggota. */
+    fun getPhone(): String = phone
+
+    /** Meminjam item yang tersedia jika anggota memiliki kurang dari tiga pinjaman aktif. */
     fun borrowItem(item: Item): Transaction? {
         if (!item.isAvailable) { println("Item ${item.id} tidak tersedia."); return null }
         if (activeBorrows >= 3) { println("$name sudah mencapai batas 3 peminjaman aktif."); return null }
@@ -28,17 +34,19 @@ class Member(
         return transaction
     }
 
-    /** Returns the member's active loan for an item. */
+    /** Mengembalikan pinjaman aktif anggota untuk suatu item. */
     fun returnItem(item: Item, daysLate: Int = 0): Double {
         val transaction = transactions.firstOrNull { it.item === item && it.status is TransactionStatus.Borrowed }
         if (transaction == null) { println("Tidak ada transaksi aktif untuk item ${item.id}."); return 0.0 }
         return transaction.returnItem(daysLate)
     }
 
-    /** Returns an immutable snapshot of member transactions. */ fun getTransactions(): List<Transaction> = transactions.toList()
-    /** Displays member information. */
+    /** Mengembalikan salinan transaksi anggota yang tidak dapat diubah. */
+    fun getTransactions(): List<Transaction> = transactions.toList()
+
+    /** Menampilkan informasi anggota. */
     fun displayInfo() = println("ID: $id | Nama: $name | Email: $email | Telepon: $phone | Total Pinjam: $transactionCount | Aktif: $activeBorrows | Denda: ${formatRupiah(totalFines)}")
-    /** Displays the member transaction history. */
+    /** Menampilkan riwayat transaksi anggota. */
     fun displayTransactions() {
         println("Riwayat transaksi $name:")
         if (transactions.isEmpty()) println("Belum ada transaksi.") else transactions.forEach { it.displayTransaction() }

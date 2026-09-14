@@ -1,21 +1,21 @@
-/** Base abstraction for every item that can be borrowed from the library. */
+/** Kelas dasar untuk semua item yang dapat dipinjam dari perpustakaan. */
 abstract class Item(
-    /** Unique identifier of the item. */ val id: String,
-    /** Item title. */ val title: String,
-    /** Publication or release year. */ val year: Int
+    /** Pengidentifikasi item yang unik. */ val id: String,
+    /** Judul item. */ val title: String,
+    /** Tahun terbit atau rilis. */ val year: Int
 ) {
-    /** Whether the item can currently be borrowed. */
+    /** Menunjukkan apakah item saat ini dapat dipinjam. */
     var isAvailable: Boolean = true
         private set
 
-    /** Calculates the fine charged for one late day. */
+    /** Menghitung denda untuk satu hari keterlambatan. */
     abstract fun calculateFinePerDay(): Double
-    /** Returns the item category. */
+    /** Mengembalikan kategori item. */
     abstract fun getItemType(): String
-    /** Returns the maximum permitted borrowing duration in days. */
+    /** Mengembalikan batas maksimum lama peminjaman dalam hari. */
     abstract fun getMaxBorrowDays(): Int
 
-    /** Borrows this item when it is available. */
+    /** Meminjam item ini jika tersedia. */
     fun borrow(): Boolean = if (isAvailable) {
         isAvailable = false
         println("Item '$title' berhasil dipinjam.")
@@ -25,7 +25,7 @@ abstract class Item(
         false
     }
 
-    /** Returns this item and calculates its late fine. */
+    /** Mengembalikan item ini dan menghitung denda keterlambatannya. */
     fun returnItem(daysLate: Int = 0): Double {
         if (isAvailable) { println("Peringatan: item '$title' tidak sedang dipinjam."); return 0.0 }
         isAvailable = true
@@ -35,7 +35,7 @@ abstract class Item(
         return fine
     }
 
-    /** Displays common item information. */
+    /** Menampilkan informasi umum item. */
     open fun displayInfo() {
         println("ID: $id | Judul: $title | Tahun: $year")
         println("Jenis: ${getItemType()} | Status: ${if (isAvailable) "Tersedia" else "Dipinjam"}")
@@ -43,5 +43,5 @@ abstract class Item(
     }
 }
 
-/** Formats an amount as Indonesian rupiah without decimals. */
+/** Memformat nominal menjadi rupiah tanpa angka desimal. */
 fun formatRupiah(amount: Double): String = "Rp %,d".format(amount.toLong()).replace(',', '.')
