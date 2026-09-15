@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d97488f-830f-4c1a-af09-722a1cd44bcd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/SyarofulHaidarSudaryono_225443051_LaporanPraktikum1PBO.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan1_Pertemuan2_Syaroful.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/Latihan_OOP_PetShop.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Adopsi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Anjing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Burung.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/CalonPemilik.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Hewan.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Kucing.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/PetShop.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Latihan_OOP_PetShop/src/petshop/StatusAdopsi.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/libraries/KotlinJavaRuntime.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/TugasMandiri1_OOP_225443051_SyarofulHaidarS.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Book.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/DVD.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Item.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Journal.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Library.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Member.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/Transaction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/src/TransactionStatus.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TugasMandiri1_OOP_225443051_SyarofulHaidarS/test" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.7160421284833123" />
+      <entry key="MS500" value="5.725927671609911" />
+      <entry key="S2" value="14.307046437258983" />
+      <entry key="S5" value="25.366216467602793" />
+      <entry key="S10" value="33.60650760887584" />
+      <entry key="S30" value="43.59833637546959" />
+      <entry key="S60" value="53.08007802593231" />
+      <entry key="M2" value="69.40292254667713" />
+      <entry key="M5" value="124.04251200934475" />
+      <entry key="M10" value="191.2163363304143" />
+      <entry key="M15" value="230.72868217137037" />
+      <entry key="M30" value="285.516840619527" />
+      <entry key="H1" value="320.81622571682874" />
+      <entry key="H2" value="340.95588486347384" />
+      <entry key="H4" value="351.7272292663131" />
+      <entry key="D1" value="361.0852482003141" />
+      <entry key="W1" value="362.7255682190912" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.6603343115179299" />
+      <entry key="MS500" value="5.684798666217875" />
+      <entry key="S2" value="14.280858769464961" />
+      <entry key="S5" value="25.347437349440952" />
+      <entry key="S10" value="33.5939987700231" />
+      <entry key="S30" value="43.59291254263292" />
+      <entry key="S60" value="53.07678752062858" />
+      <entry key="M2" value="69.4007707494726" />
+      <entry key="M5" value="124.04090000880689" />
+      <entry key="M10" value="191.21500574332228" />
+      <entry key="M15" value="230.7275722706913" />
+      <entry key="M30" value="285.5161228023972" />
+      <entry key="H1" value="320.81581216192535" />
+      <entry key="H2" value="340.955662161995" />
+      <entry key="H4" value="351.72711361085396" />
+      <entry key="D1" value="361.0852282969021" />
+      <entry key="W1" value="362.7255653599776" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3JLfHO9q4sAnwQ5aYxEhPpnZdI4" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Kotlin.MainKt.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/Haidar/IdeaProjects/Pengumpulan Day 2/TugasMandiri2_OOP_225443051_SyarofulHaidarS/docs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Haidar/IdeaProjects/TugasMandiri2_OOP_225443051_SyarofulHaidarS/src/Main.kt",
+    "settings.editor.selected.configurable": "ml.llm.AcpAgentsConfigurable",
+    "to.speed.mode.migration.done": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Haidar\IdeaProjects\Pengumpulan Day 2\TugasMandiri2_OOP_225443051_SyarofulHaidarS\docs" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-a203e0a19954-intellij.indexing.shared.core-IU-262.10315.125" />
+        <option value="bundled-js-predefined-d6986cc7102b-4abd2a77f808-JavaScript-IU-262.10315.125" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d97488f-830f-4c1a-af09-722a1cd44bcd" name="Changes" comment="" />
+      <created>1789445182742</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1789445182742</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
